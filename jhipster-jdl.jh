@@ -1,0 +1,28 @@
+
+
+/**
+ * The Employees entity.
+ */
+entity Employees {
+	/**
+	* The firstname attribute.
+	*/
+	firstName String,
+	lastName String,
+	email String,
+	phoneNumber String
+}
+
+
+
+// Set pagination options
+
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

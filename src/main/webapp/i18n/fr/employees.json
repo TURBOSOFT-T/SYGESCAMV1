@@ -1,0 +1,29 @@
+{
+  "sygescamv1App": {
+    "employees": {
+      "home": {
+        "title": "Employees",
+        "createLabel": "Créer un nouveau Employees",
+        "createOrEditLabel": "Créer ou éditer un Employees",
+        "search": "Recherche pour Employees",
+        "notFound": "Aucun Employees trouvé"
+      },
+      "created": "Un nouveau Employees a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Employees avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Employees avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Employees {{ id }} ?"
+      },
+      "detail": {
+        "title": "Employees"
+      },
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phoneNumber": "Phone Number",
+      "help": {
+        "firstName": "The firstname attribute."
+      }
+    }
+  }
+}

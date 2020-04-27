@@ -1,0 +1,42 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="employees">
+            <h2><span jhiTranslate="sygescamv1App.employees.detail.title">Employees</span> {{ employees.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="sygescamv1App.employees.firstName" [ngbTooltip]="'sygescamv1App.employees.help.firstName' | translate">First Name</span></dt>
+                <dd>
+                    <span>{{ employees.firstName }}</span>
+                </dd>
+                <dt><span jhiTranslate="sygescamv1App.employees.lastName">Last Name</span></dt>
+                <dd>
+                    <span>{{ employees.lastName }}</span>
+                </dd>
+                <dt><span jhiTranslate="sygescamv1App.employees.email">Email</span></dt>
+                <dd>
+                    <span>{{ employees.email }}</span>
+                </dd>
+                <dt><span jhiTranslate="sygescamv1App.employees.phoneNumber">Phone Number</span></dt>
+                <dd>
+                    <span>{{ employees.phoneNumber }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/employees', employees.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
